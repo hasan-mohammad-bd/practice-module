@@ -1,0 +1,178 @@
+:root{
+    --offwhite-color: rgb(255, 253, 232);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.6;
+}
+
+ul {
+    list-style-type: none;
+}
+
+ul li {
+    text-transform: uppercase;
+}
+
+a {
+    text-decoration: none;
+    color: var(--offwhite-color);
+    text-transform: uppercase;
+}
+
+h2, h3 {
+    font-weight: 300;
+    line-height: 1.2;
+    margin: 10px 0;
+}
+
+img {
+    width: 100%;
+}
+
+/* Navbar & Showcase */
+
+nav ul li{
+    padding:0 5px;
+    padding-bottom: 5px;
+    color: var(--offwhite-color);
+    margin: 10px;
+
+}
+
+
+
+
+nav ul li:hover {
+    border-bottom:1px solid rgb(224, 224, 224);
+
+}
+
+
+
+.showcase-cover {
+    height: 100vh;
+    width: 100%;
+    background-image: url(images/cover.webp);
+    background-size: cover;    
+}
+
+.logo {
+    width: 200px;
+    margin-right: 10px;
+
+}
+
+.showcase-cover .navbar {
+    width: 100%;
+    height: 80px;
+    justify-content: space-between;
+    
+}
+
+
+.container {
+    padding: 0 20px;
+
+
+}
+
+i {
+    color: var(--offwhite-color);
+    transition: color 0.2s ease-in;
+}
+
+i:hover{
+    color: rgb(138, 0, 0);
+}
+
+.flex {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+.search-bar > div,.icon {
+    padding: 0 10px;
+}
+
+.search-bar input {
+    background-color: transparent;
+    outline: none;
+    border: none;
+    border-bottom: 1px solid var(--offwhite-color);
+    flex-basis: 250px;
+    padding: 0 5px;
+    padding-bottom: 10px;
+    
+}
+
+input::placeholder {
+    color: var(--offwhite-color);
+    opacity: 0.8;
+    text-align: start;
+    font-size: 14px;
+    
+}
+
+
+.dropdown-text, .photo-holder{
+    flex-basis: 100%;
+    flex: 1;
+
+}
+
+.dropdown-text {
+    background-color: rgb(194, 194, 194);
+    margin: auto;
+    height: 310px;
+    position: relative;
+    bottom: 4px;
+
+}
+.dropdown-text li {
+    background-color: rgb(194, 194, 194);
+    text-align: center;
+    margin-top: 55px;
+}
+
+.home-dropdown-holder {
+    position: relative;
+}
+
+.flex-container {
+    position: absolute;
+    right:0;
+    left: 11px;
+    top:100%;
+    width: 500px;
+    height: 400px;
+    transition: opacity, 1s ease-in;
+    display: none;
+    opacity: 0;
+    opacity: .2;
+} 
+.home-dropdown-holder:hover .flex-container {
+    display: flex;
+    opacity: 1;
+
+}
+
+
+.photo-holder{
+    background:transparent
+}
+.photo-holder img{
+    margin: auto;
+}
+
+
+
