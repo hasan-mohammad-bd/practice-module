@@ -5,8 +5,44 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>cricket match</title>
+    <style>
+        .find {
+            height: 600px;
+            width: 1100px;
+            border: 3px solid black;
+        }
+
+        img {
+            width: 25%;
+            position: relative;
+            top: 100px;
+            transition: transform 0.3s ease-out;
+        }
+
+        .find:hover img {
+            transform: rotate(-60deg);
+            transform-origin:top right ;
+        }
+
+        .boll {
+            height: 25px;
+            width: 25px;
+            background-color: brown;
+            border-radius: 50px;
+            position: relative;
+            left: 425px;
+            transition: transform 0.5s ease-out 0.3s;
+        }
+
+        .find:hover .boll {
+            transform: translate(300px, -300px);
+        }
+    </style>
 </head>
 <body>
-    
+    <div class="find">
+        <img src="./Images/cricket-bat.png" alt="">
+        <div class="boll"></div>
+    </div>
 </body>
 </html>
