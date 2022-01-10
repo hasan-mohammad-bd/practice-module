@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation</title>
+    <style>
+        @keyframes slider {
+            0% {
+                background-color: cadetblue;
+                left: 0;
+                top: 0;
+                transform: scale(0.2);
+            }
+
+            25% {
+                top: 400px;
+                background-color: crimson;
+                transform: scale(0.3);
+            }
+            50% {
+                top: 0px;
+                background-color: cadetblue;
+                transform: scale(0.5s);
+            }
+            75% {
+                top: 400px;
+                background-color: crimson;
+                transform: scale(0.7);
+            }
+
+            100% {
+                background-color: cadetblue;
+                left: 800px;
+                top: 0;
+                transform: scale(1);
+            }
+        }
+
+        .stage{
+            height: 500px;
+            width: 900px;
+            background-color: burlywood;
+        }
+
+        .ball {
+            width: 100px;
+            height: 100px;
+            border-radius: 50px;
+            background-color: cadetblue;
+            position: relative;
+            animation: slider 1s ease-in-out 0.3s infinite alternate;
+            animation-play-state: running;
+        }
+            /* animaton poperty derails:
+            1st= animation-name, 
+            2nd= animation duration, 
+            3rd= time function, 
+            4th= animation delay, 
+            5th= aitaration count: how many times the animation would run, value can be infinit or any number
+            6th= direction: whether the animation will go forword or backword, value can be alternate
+            7th= fill mood, ? */
+
+
+            
+    </style>
+</head>
+<body>
+    <div class="stage">
+        <div class="ball"></div>
+    </div>
+</body>
+</html>
